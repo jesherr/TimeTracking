@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --LighOrange: hsl(15, 100%, 70%);
+  --SoftBlue: hsl(195, 74%, 62%);
+  --LightRed: hsl(348, 100%, 68%);
+  --LimeGreen: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --SoftOrange: hsl(43, 84%, 65%);
+
+  --VeryDarkBlue: hsl(226, 43%, 10%);
+  --DarkBlue: hsl(235, 46%, 20%);
+  --DesaturatedBlue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+}
+li:hover{
+  cursor: pointer;
+  color:var(--DesaturatedBlue)
+}
+h2 {
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  h2,
+  .horas {
+    font-size: 3vw;
+  }
+}
+.container {
+  min-width: 250px;
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .container {
+    min-width: auto;
+  }
+}
+.background_color {
+  background-color: var(--VeryDarkBlue);
+}
+.people {
+  background-color: var(--DarkBlue);
+}
+.cart_people {
+  background-color: var(--Blue);
+}
+.cart_list {
+  background-color: var(--DarkBlue);
+}
+.cart_list:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+.cart_work {
+  background-color: var(--LighOrange);
+}
+.cart_Play {
+  background-color: var(--SoftBlue);
+}
+.cart_Study {
+  background-color: var(--LightRed);
+}
+.cart_Exercise {
+  background-color: var(--LimeGreen);
+}
+.cart_Social {
+  background-color: var(--Violet);
+}
+.cart_Salud {
+  background-color: var(--SoftOrange);
+}
